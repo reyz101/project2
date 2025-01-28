@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="cart.css"/>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="logo/vintagem logo diamond.png"/>
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/9e36e2ec55.js" crossorigin="anonymous"></script>
+
+    <!--popping fonts family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+
+    <!--Navigation-->
+    <nav class="navigation">
+        
+        <!--logo-->
+        <a href="index.html" class="logo"><img src="logo/vintagem logo.png"></a>
+
+        <!--menu button-->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </label>
+
+        <!--menu-->
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></1i>
+            <li><a href="#">Shop</a></1i>
+            <li><a href="products.html">Products</a></1i>
+            <li><a href="#">Contact</a></1i>
+        </ul>
+
+        <!--right elements-->
+        <div class="right-elements">
+            <!--search-->
+            <a href="#" class="search">
+                <i class="fas fa-search"></i>
+            </a>
+
+            <!--cart-->
+            <a href="cart.html" class="cart">
+                <i class="fas fa-shopping-bag"></i>
+            </a>
+
+            <!--user-->
+            <a href="login.html" class="user">
+                <i class="fas fa-user"></i>
+            </a>
+
+        </div>
+    </nav>
+    <!--navigation end-->
+
+    <div class="container">
+        <!-- Left Container -->
+        <div class="left-container">
+            <h2>Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <img src="products/test.png"></img>
+                            </div>
+                            <div class="content">
+                                <strong>Product name</strong>
+                                <p>Size: L</p>
+                                <p>Color: Red</p>
+                            </div>
+                        </td>
+                        <td>$34</td>
+                        <td>
+                            <div class="qty-control">
+                                <button class="minus">-</button>
+                                <input type="text" value="2" min="1">
+                                <button class="plus">+</button>
+                            </div>
+                        </td>
+                        <td>$34</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <img src="products/test.png"></img>
+                            </div>
+                            <div class="content">
+                                <strong>Product name</strong>
+                                <p>Size: L</p>
+                                <p>Color: Red</p>
+                            </div>
+                        </td>
+                        <td>$34</td>
+                        <td>
+                            <div class="qty-control">
+                                <button class="minus">-</button>
+                                <input type="text" value="2" min="1">
+                                <button class="plus">+</button>
+                            </div>
+                        </td>
+                        <td>$34</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item">
+                                <img src="products/test.png"></img>
+                            </div>
+                            <div class="content">
+                                <strong>Product name</strong>
+                                <p>Size: L</p>
+                                <p>Color: Red</p>
+                            </div>
+                        </td>
+                        <td>$34</td>
+                        <td>
+                            <div class="qty-control">
+                                <button class="minus">-</button>
+                                <input type="text" value="2" min="1">
+                                <button class="plus">+</button>
+                            </div>
+                        </td>
+                        <td>$34</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Right Container -->
+        <div class="right-container">
+            <h2>Estimated Shipping & Tax</h2>
+            <div>
+                <label for="address">Region:</label>
+                <select name="address" id="address">
+                    <option value="manila">Manila</option>
+                    <option value="cebu">Cebu</option>
+                    <option value="davao">Davao</option>
+                </select>
+                <label for="zipcode">Zip/Postal Code:</label>
+                <input type="text" id="zipcode" class="input-field" placeholder="Enter your zip code">
+            </div>
+
+
+            <h2>Payment Method</h2>
+            <div class="payment-methods">
+                <label><input type="radio" name="payment-method"> Cash on Delivery</label>
+                <label><input type="radio" name="payment-method"> E-Wallet</label>
+                <label><input type="radio" name="payment-method"> Bank Account</label>
+                <label><input type="radio" name="payment-method"> Credit/Debit Card</label>
+            </div>
+
+            <br>
+
+            <div class="summary">
+                <h2>Payment</h2>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>$74</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping Fee</span>
+                    <span>$5</span>
+                </div>
+                <div class="summary-item">
+                    <strong>Total</strong>
+                    <strong class="total">$79</strong>
+                </div>
+                <br>
+                <a href="checkout.html" class="place-order">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-container">
+    
+                <!--logo-container-->
+                <div class="footer-logo-container">
+    
+                    <!--logo-->
+                    <div class="footer-logo"><img src="logo/vintagem logo.png" alt="VintaGem"></div>
+                    <span>Copyright 2024 | All Rights Reserved</span>
+                    <!--social-->
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+    
+                <!--footer menu-->
+                <div class="footer-menu">
+    
+                    <!--footer menu box1-->
+                    <div class="footer-menu-box">
+                        <strong>Contact Us</strong>
+                        <h4>Email</h4>
+                        <p>vintagem@gmail.com</p>
+                        <h4>Phone</h4>
+                        <p>+63 123 456 789</p>
+                        <h4>Address</h4>
+                        <p>123 Main Street, Cebu, Philippines</p>
+                    </div>
+    
+                    <!--footer menu box2-->
+                    <div class="footer-menu-box">
+                        <strong>Information</strong>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">F.Q.A.</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping & Returns</a></li>
+                        </ul>
+                    </div>
+    
+                    <!--footer menu box3-->
+                    <div class="footer-menu-box">
+                        <strong>Product</strong>
+                        <ul>
+                            <li><a href="#">Men's Vintage</a></li>
+                            <li><a href="#">Women's Vintage</a></li>
+                            <li><a href="#">Kids Vintage</a></li>
+                            <li><a href="#">Sportswear Vintage</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Shop by Brand</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!--Copyright-->
+        <span class="copyright">© 2024 VintaGem.com</span>
+</body>
+</html>
